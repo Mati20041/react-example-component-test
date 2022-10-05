@@ -2,10 +2,11 @@ import {FunctionComponent, useState} from 'react'
 import {apiCal, UserDto} from "./userApi";
 
 export const Async: FunctionComponent = () => {
-    const [loading, setLoading] = useState(true)
+    const [loading, setLoading] = useState(false)
     const [user, setUser] = useState<UserDto>()
 
     const onFetch = () => {
+        setLoading(true)
         return apiCal()
             .then(setUser)
             .finally(() => setLoading(false));
