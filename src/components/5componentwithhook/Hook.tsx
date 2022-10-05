@@ -1,5 +1,5 @@
 import {FunctionComponent} from 'react'
-import {useMyDomainLogic} from "./__tests__/useMyDomainLogic";
+import {useMyDomainLogic} from "./useMyDomainLogic";
 
 export const Hook: FunctionComponent = () => {
     const {loading, user} = useMyDomainLogic()
