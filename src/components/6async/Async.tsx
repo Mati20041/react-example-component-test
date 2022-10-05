@@ -16,9 +16,9 @@ export const Async: FunctionComponent = () => {
     }
 
     return (<div>
-        {user
-            ? <p>User: <span>{user.username}</span></p>
-            : <p>No User</p>}
+        <p>{user
+            ? `User: ${user.username}`
+            : 'No User'}</p>
         <button onClick={onFetch}>Fetch</button>
     </div>);
 };
