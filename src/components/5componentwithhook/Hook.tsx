@@ -9,6 +9,6 @@ export const Hook: FunctionComponent = () => {
     }
 
     return (<div>
-        <p>User: <span>{user.username}</span></p>
+        <p data-testid="username">User: <span>{user.username}</span></p>
     </div>);
 };

@@ -6,7 +6,7 @@ interface StyleProps {
 }
 
 export const Style: FunctionComponent<StyleProps> = ({isSelected}) => {
-    return (<StyledFrame isPredicateTrue={isSelected}>
+    return (<StyledFrame isPredicateTrue={isSelected} data-testid="frame">
         <p role="article">
             Loremipsum
         </p>

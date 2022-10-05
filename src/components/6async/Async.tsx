@@ -17,7 +17,7 @@ export const Async: FunctionComponent = () => {
     }
 
     return (<div>
-        <p>{user
+        <p data-testid="user">{user
             ? `User: ${user.username}`
             : 'No User'}</p>
         <button onClick={onFetch}>Fetch</button>

@@ -1,8 +1,31 @@
 import {Style} from "../Style";
+import {render, screen} from "@testing-library/react";
 
 
-describe('Style', function () {
-    it('should be ok', function () {
-        expect(2).toEqual(2)
+describe('Style', () => {
+    it('should render ok', () => {
+        // Arrange & Act
+        const {getContainer} = renderStyle()
+        const container = getContainer();
+
+        // Assert
+        expect(container).toHaveStyle({'background-color': 'gray'})
+    });
+
+    it('should change color', () => {
+        // Arrange & Act
+        const {getContainer} = renderStyle(true)
+        const container = getContainer();
+
+        // Assert
+        expect(container).toHaveStyle({'background-color': 'white'})
     });
 });
+
+const renderStyle = (selected?: boolean) => {
+    render(<Style isSelected={selected}/>)
+
+    return {
+        getContainer: () => screen.getByTestId('frame'),
+    }
+}
