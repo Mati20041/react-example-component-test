@@ -1,6 +1,10 @@
 import {useState} from "react";
 
+const userFixture = {
+    username: 'Mati'
+}
+
 export const useMyDomainLogic = () => {
     const [loading, setLoading] = useState(true)
-    return {loading, fetch: () => setLoading(false)}
+    return {loading, user: userFixture}
 }
