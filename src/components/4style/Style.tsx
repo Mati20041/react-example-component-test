@@ -2,7 +2,7 @@ import {FunctionComponent} from 'react'
 import styled from "styled-components";
 
 interface StyleProps {
-    isSelected: boolean;
+    isSelected?: boolean;
 }
 
 export const Style: FunctionComponent<StyleProps> = ({isSelected}) => {
@@ -14,7 +14,7 @@ export const Style: FunctionComponent<StyleProps> = ({isSelected}) => {
 };
 
 interface StyledFrameProps {
-    isPredicateTrue: boolean
+    isPredicateTrue?: boolean
 }
 
 const StyledFrame = styled.div<StyledFrameProps>`
