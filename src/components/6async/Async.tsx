@@ -11,12 +11,14 @@ export const Async: FunctionComponent = () => {
             .finally(() => setLoading(false));
     }
 
-    if(loading) {
+    if (loading) {
         return <div data-testid="spinner">Spinner</div>
     }
 
     return (<div>
-        <p>User: <span>{user?.username}</span></p>
+        {user
+            ? <p>User: <span>{user.username}</span></p>
+            : <p>No User</p>}
         <button onClick={onFetch}>Fetch</button>
     </div>);
 };
