@@ -1,4 +1,4 @@
-# Example Approaches to how to test different aspects of components
+# Example approaches of how to test different aspects of components
 
 Components are split into following aspects (prefixed with a number):
 1. Component that don't need a test
