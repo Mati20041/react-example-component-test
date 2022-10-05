@@ -1,7 +1,7 @@
 # Example approaches of how to test different aspects of components
 
 Components are split into following aspects (prefixed with a number):
-1. Component that don't need a test
+1. Component that doesn't need a test
 2. Component with a content prop
 3. Component with a callback
 4. Component with a changing style
