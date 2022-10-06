@@ -8,3 +8,4 @@ Components are split into following aspects (prefixed with a number):
 5. Component with a domain hook
 6. Component with an asynchronous change
 7. Hook testing
+8. Component with nested BigComponent
